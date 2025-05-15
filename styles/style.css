@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    padding: 22px;
+    border-bottom: 4px solid;
+    margin-bottom: 30px;
+    background-color: rgb(89, 120, 147);
+    
+}
+
+nav {
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+#title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+button {
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgb(58, 133, 138);
+    transition: 1s;
+    border: black 2px solid;
+    
+}
+
+a {
+    font-size: 27px;
+    text-align: center;
+    
+    
+}
+
+input {
+    border-radius: 10px;
+    padding: 10px;
+    border-color: black;
+}
+button:hover {
+    color: grey;
+    background: whitesmoke;
+    border-color: whitesmoke;
+    cursor: pointer;
+}
+/*#Sign-Up {
+    margin-left: 1200px;
+    margin-right: 10px;
+}*/
+
+#board {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 800px;
+}
+
+
+
+.column {
+    background-color: red;
+    border: black 3px solid;
+    width: 100%;
+    height: 100%;
+
+}
+
+.fact{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+    padding: 20px;
+    background-color: rgb(89, 120, 147);
+    align-items: center;
+    align-content: center;
+    font-size: 1.5em;
+
+    
+}
+
+.fact img{
+    border: 7px solid grey;
+    border-radius: 5px;
+
+    
+}
+
+footer {
+    background-color: rgb(48, 75, 99);
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+footer a {
+    color: antiquewhite;
+    text-decoration: none;
+    transition: 0.2s;
+    padding: 5px;
+}
+
+
+footer a:hover {
+    color: rgb(57, 57, 123);
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.about {
+    background-color: rgb(89, 120, 147);
+    text-align: center;
+    padding: 10px;
+}
+
+.about p {
+    display: inline-block;
+    padding: 10px;
+    border: 4px white solid;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+.about h2 {
+    font-size: 2em;
+}
+
+
+.page-button a{
+    
+    margin: 0px 10px;
+    transition: 0.2s;
+    
+}
+
+.page-button a:hover{
+    background-color: aliceblue;
+    border-radius: 10px;
+    border:black 1px solid;
+    padding: 5px;
+    margin: 0px 10px;
+    
+    
+}
+

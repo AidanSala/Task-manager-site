@@ -1,0 +1,393 @@
+/**
+ * CST8285 Assignment 1
+ * CSS for all pages
+ */
+
+/* Sets common properties for the header and footer such as font family and flexboxification */
+header, footer {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    animation: slideInFromBottom 1s;
+}
+
+/* Centers anything that needs to be centered */
+.centerme {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.resume-box {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Exclusive header property: it has a border radius */
+header {
+    border-radius: 50px;
+}
+
+/* Exclusive footer properties: it is fixed to the bottom of the screen */
+footer {
+    width: 100%;
+    font-size: 0.8em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Prettyfy elements into bubbles that slide in from bottom of screen */
+/* Similar effects to header but less pronounced (ie more subtle background and font color) */
+.bubbleSection {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #666;
+    animation: slideInFromBottom 1s;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+/* Removes border from button bubbles by default */
+button.bubbleSection {
+    border: none;
+}
+
+/* Darkens background color of buttons on hover */
+button.bubbleSection:hover {
+    background-color: #f0f0f0;
+}  
+
+/* Green navbox properties */
+/* Similar to containing header box but smaller and green */
+nav {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    flex-direction: row;
+    background-color: #d5ffee;
+    border-radius: 50px;
+}
+
+/* Set properties for green navbox button and for form submit button*/
+nav button, form .submit_reset_btn {
+    color: #333;
+    padding: 2px;
+    margin: 2px;
+    background-color: #d5ffee;
+    border-radius: 10px;
+    border: 1px solid #92a39c;
+}
+
+/* bold text */
+.bold {
+    font-weight: bold;
+}
+
+/* Greys out text color of navbox and form submit buttons on hover or when they are selected */
+nav button:disabled, nav button:hover, form .submit_reset_btn:hover {
+    color: #aaa;
+}
+
+/* Sets properties for content containers */
+.container {
+    overflow: scroll;
+    padding-bottom: 80px;
+    margin-bottom: 10px;
+    scrollbar-width: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Sets image properties */
+img {
+    max-width: 128px;
+    max-height: 128px;
+    border-radius: 50%;
+    float: right;
+    padding: 10px;
+    object-fit: contain;
+}
+
+/* Floats something to the right */
+.floatme-right {
+    float: right;
+    padding: 10px;
+    object-fit: contain;
+}
+
+/* Fixes for kliqy logo image */
+.circle-screenshot {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Indents cetrain paragraphs */
+.indented-paragraph {
+    text-indent: 2em;
+}
+
+/* Grid for form layout (input area only) */
+#input-area {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Flexboxify contact form divs */
+#labels, #inputs {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fill screen */
+.fillscreen {
+    height: 1440px;
+    width: 75%;
+}
+
+/* customize links for resume navbox and intro box */
+.resume-nav a, #intro a, #calendar a {
+    text-decoration: underline;
+    color: #666;
+}
+
+.resume-nav a:hover, #intro a:hover, #calendar a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* darker version of bubblesection to stand out */
+.bubbleSection.dark {
+    background-color: #f0f0f0;
+}
+
+/* Name section of resume */
+#resume-name {
+    font-size: 2em;
+}
+
+/* Allign some content to left */
+.content, .left-align {
+    text-align: left;
+}
+
+/* Subheading font size fixes */
+.lowh {
+    font-size: 1.5em;
+}
+
+.lowerh {
+    font-size: 1.125em;
+}
+
+/* Screenshots and introbox image properties */
+.image {
+    border-radius: 1.5625%;
+    max-width: 768px;
+    max-height: 432px;
+    float: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Image box holder + navbox for resume properties */
+/* 2 wide grid that colapses into a 1 wide column */
+.images, .resume-nav {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    object-fit: contain;
+    border-radius: 0;
+    scrollbar-width: none;
+    text-align: center;
+}
+
+#board {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    object-fit: contain;
+    border-radius: 0;
+    scrollbar-width: none;
+    text-align: center;
+}
+
+/* Space evenly for resume nav to make it look cool */
+.resume-nav {
+    justify-content: space-evenly;
+}
+
+/* Small images */
+.small {
+    width: 512px;
+    height: 288px;
+}
+
+/* For 1x2 image grids */
+.one-by-two {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+/* Media queries */
+@media (orientation: landscape) {
+    .images, .resume-nav {
+        grid-template-columns: auto auto;
+    }
+    .one-by-two {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }    
+}
+
+@media (max-width: 1080px) {
+    .screenshot {
+        max-width: 384px;
+        max-height: 216px;
+    }
+}
+
+/* This is mobile mode: increase font size for certain elements to fit well on my phone in portrait mode */
+@media (orientation: portrait) {
+    h1 {
+        font-size: 2em;
+    }
+    button, #html_btnBack, #html_btnNext, #downloadPdf, form .submit_reset_btn {
+        font-size: 1.2em;
+    }
+    .images, .resume-nav {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        justify-content: center;
+    }
+}
+
+/* Animation for certain elements to slide up from the bottom of the screen */
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromSide {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Test animations on objects */
+.animateme {
+    animation: slideInFromBottom 1s;
+}
+
+
+aside {
+    position: absolute;
+    left: 0;
+}
+
+
+#base {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#sidebar {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+.button-clean {
+    background-color: transparent;
+    border: none;
+}
+
+.makevisible {
+    animation: slideInFromSide 1s;
+}
+
+#topbar {
+    width:10px;
+    position: absolute;
+    left: 0;
+    transition: 0.3s;
+}
+
+#bottombar {
+    width:10px;
+    position: absolute;
+    left: 0;
+    transition: 0.3s;
+    bottom: 70px;
+}
+
+
+.sideChange {
+    display:none;
+}
+
+.sideChange2 {
+    display:none;
+}
+
+#createBar {
+    width:10px;
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    transition: 0.3s;
+    /*display: flex;
+    justify-content: center;
+    flex-wrap: column wrap;*/
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+#tname {
+    width: 50px;
+    margin-left: 5px;
+}
+
+#ttime {
+    width: 50px;
+    margin-left: 5px;
+}
