@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Name:Sebastian Sell
+        file name : sign-up.html
+        date created: March 18th 2025
+        This website's purpose is to be a task managment system.
+        This particular page serves as the page where users will make an account for this site.
+    -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" type="text/css" href="styles/signup-login.css">
+</head>
+<body>
+    <div class="background-text">
+        <h1>Join Task Management Today! 💚</h1>
+        <ul style="list-style-type: '✅ ';">
+            <li>Track your progress</li>
+            <li>Set your goals</li>
+            <li>Manage time easier</li>
+        </ul>
+    </div>
+
+
+    <div class="form-container">
+        <a href="index.html" id="exit">✕</a>
+        <h2>Sign Up</h2>
+        <form method="post" action="index.php">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <button type="submit">Sign Up</button>
+            <p>By signing up, you agree to our Terms of Service and Privacy Policy.</p>
+        </form>
+        Already have an account? <a href="login.php">Log in</a>
+    </div>
+</body>
+</html>
